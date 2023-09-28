@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  border: solid 2px black;
+  border-radius: 15px;
+  padding: 1em;
+  width: 60vh;
+  height: 75vh;
+}
+
+#screen {
+  border: solid 2px black;
+  margin-bottom: 1em;
+  padding: 10px;
+  text-align: right;
+}
+
+#bottom-screen {
+  font-size: large;
+}
+
+#command-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#calculate-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+#buttons {
+  margin: auto;
+}
+
+#buttons button {
+  height: 9vh;
+  max-height: 100%;
+}
+
+#command-buttons button {
+  margin: 2px;
+  text-align: center;
+}
+
+#calculate-buttons button {
+  margin: 2px;
+  /* background-color: #EEEEEE; */
+  border: solid 1px black;
+}
