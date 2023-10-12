@@ -40,5 +40,15 @@ equalsButton.addEventListener("click", () => {
   if (topScreen.textContent !== "") {
     topScreen.textContent = topScreen.textContent + bottomScreen.textContent;
     bottomScreen.textContent = eval(topScreen.textContent);
+    topScreen.textContent += "=";
   }
+});
+
+clearButton.addEventListener("click", () => {
+  topScreen.textContent = "";
+  bottomScreen.textContent = "0";
+});
+
+deleteButton.addEventListener("click", () => {
+  bottomScreen.textContent = bottomScreen.textContent.slice(0, -1);
 });
